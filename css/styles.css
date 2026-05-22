@@ -2,8 +2,8 @@
     --bg: #f8f8f6;
     --bg-alt: #f1f2ee;
     --surface: #ffffff;
-    --text: #202224;
-    --muted: #5d6268;
+    --text: #101214;
+    --muted: #3d3238;
     --line: #d9dde2;
     --accent: #2f6e62;
     --accent-deep: #245248;
@@ -129,7 +129,9 @@ img {
 .hero-stack {
     display: grid;
     gap: 1rem;
-    max-width: 760px;
+    max-width: 1320px;
+    justify-items: start;
+    text-align: left;
 }
 
 .eyebrow,
@@ -156,6 +158,25 @@ h3 {
 h1 {
     font-size: clamp(2.7rem, 6vw, 4.6rem);
     margin-top: 0.2rem;
+}
+
+.hero-title {
+    display: grid;
+    gap: 0.2rem;
+}
+
+.hero-title-top {
+    display: block;
+    font-size: clamp(1.9rem, 4.1vw, 3.25rem);
+    line-height: 1.02;
+    color: #4a4f55;
+}
+
+.hero-title-main {
+    display: block;
+    font-size: clamp(2.7rem, 6vw, 4.6rem);
+    line-height: 1.05;
+    white-space: nowrap;
 }
 
 h2 {
@@ -264,6 +285,24 @@ p {
     display: grid;
     gap: 0;
     border-top: 1px solid var(--line);
+}
+
+.timeline-groups {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.timeline-group {
+    display: grid;
+    gap: 0.7rem;
+}
+
+.timeline-group-title {
+    color: var(--accent-deep);
+}
+
+.timeline-group .detail-list {
+    margin-left: 1.5rem;
 }
 
 .detail-row {
@@ -460,6 +499,10 @@ img.speaker-photo {
     .nav-dropdown-menu {
         position: static;
         margin-top: 0.5rem;
+    }
+
+    .hero-title-main {
+        white-space: normal;
     }
 }
 
