@@ -192,6 +192,11 @@ p {
     margin: 0;
 }
 
+code {
+    font-family: "Overpass Mono", "SFMono-Regular", Consolas, monospace;
+    overflow-wrap: anywhere;
+}
+
 .hero-text,
 .hero-meta,
 .section-copy,
