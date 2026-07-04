@@ -218,6 +218,15 @@ code {
     font-weight: 600;
 }
 
+del {
+    color: var(--muted);
+}
+
+.extended-date {
+    color: var(--accent-deep);
+    font-weight: 700;
+}
+
 .button {
     display: inline-flex;
     align-items: center;
