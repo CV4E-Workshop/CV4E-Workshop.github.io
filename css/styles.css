@@ -351,6 +351,14 @@ del {
     gap: 2rem;
 }
 
+.schedule-table-wrap {
+    overflow-x: auto;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(16, 18, 20, 0.06);
+}
+
 .schedule-panel {
     display: grid;
     gap: 0.9rem;
@@ -359,12 +367,12 @@ del {
 .schedule-table {
     width: 100%;
     border-collapse: collapse;
-    border-top: 1px solid var(--line);
+    min-width: 820px;
 }
 
 .schedule-table th,
 .schedule-table td {
-    padding: 0.7rem 0;
+    padding: 1rem 1.1rem;
     border-bottom: 1px solid var(--line);
     text-align: left;
     vertical-align: top;
@@ -373,6 +381,13 @@ del {
 .schedule-table th {
     color: var(--text);
     font-weight: 800;
+    font-size: 0.92rem;
+    background: #f3f0dd;
+}
+
+.schedule-table th + th,
+.schedule-table td + td {
+    border-left: 1px solid var(--line);
 }
 
 .schedule-table td {
@@ -381,10 +396,30 @@ del {
 }
 
 .schedule-table td:first-child {
-    width: 44%;
+    width: 18%;
     color: var(--text);
     font-weight: 700;
     white-space: nowrap;
+}
+
+.schedule-table td:nth-child(2),
+.schedule-table td:nth-child(4) {
+    width: 32%;
+}
+
+.schedule-table td:nth-child(3) {
+    width: 18%;
+    color: var(--text);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.schedule-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.schedule-table strong {
+    color: var(--text);
 }
 
 .simple-columns {
