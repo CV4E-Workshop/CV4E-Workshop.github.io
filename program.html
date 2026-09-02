@@ -9,12 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/mobile-nav.js" defer></script>
 </head>
 <body>
     <header class="site-header">
         <div class="site-shell">
             <a class="site-mark" href="./index.html">CV4Ecology 2026</a>
-            <nav class="site-nav" aria-label="Primary">
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+            <nav id="primary-navigation" class="site-nav" aria-label="Primary">
                 <a href="./index.html">Home</a>
                 <a href="./cfp.html">CFP</a>
                 <a class="is-active" href="./program.html">Program</a>
@@ -41,7 +43,7 @@
                     poster sessions, a challenge session, and a panel on global connectivity.
                 </p>
                 <p class="hero-meta">
-                    ECCV 2026 · September 8-9, 2026 · Malmö, Sweden
+                    ECCV 2026 · September 8, 2026 · Malmö, Sweden
                 </p>
             </div>
         </section>
@@ -50,61 +52,40 @@
             <div class="site-shell stacked-section">
                 <p class="section-kicker">Overview</p>
                 <h2>Workshop schedule</h2>
-                <div class="schedule-table-wrap" role="region" aria-label="Workshop schedule overview">
-                    <table class="schedule-table schedule-table--paired">
-                        <thead>
-                            <tr>
-                                <th scope="col">Morning Time</th>
-                                <th scope="col">Morning Event</th>
-                                <th scope="col">Afternoon Time</th>
-                                <th scope="col">Afternoon Event</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>9:00am-9:10am</td>
-                                <td>Introduction</td>
-                                <td>2:15pm-2:30pm</td>
-                                <td>Challenge</td>
-                            </tr>
-                            <tr>
-                                <td>9:15am-9:55am</td>
-                                <td><strong>Oisin Mac Aodha</strong></td>
-                                <td>2:30pm-3:30pm</td>
-                                <td><strong>Panel Discussion: Global Connectivity</strong></td>
-                            </tr>
-                            <tr>
-                                <td>10:00am-10:40am</td>
-                                <td><strong>Lukáš Picek</strong></td>
-                                <td>3:30pm-3:45pm</td>
-                                <td>Coffee Break</td>
-                            </tr>
-                            <tr>
-                                <td>10:40am-10:55am</td>
-                                <td>Coffee Break</td>
-                                <td>3:45pm-4:25pm</td>
-                                <td><strong>Silvia Zuffi</strong></td>
-                            </tr>
-                            <tr>
-                                <td>10:55am-11:55am</td>
-                                <td>Spotlight Sessions</td>
-                                <td>4:25pm-5:05pm</td>
-                                <td><strong>Nico Lang</strong></td>
-                            </tr>
-                            <tr>
-                                <td>12:00pm-1:30pm</td>
-                                <td>Lunch &amp; Posters</td>
-                                <td>5:05pm</td>
-                                <td>Closing Remarks</td>
-                            </tr>
-                            <tr>
-                                <td>1:30pm-2:10pm</td>
-                                <td><strong>Hjalmar S. Kühl</strong></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="schedule-grid" aria-label="Workshop schedule overview">
+                    <section class="schedule-panel">
+                        <h3>Morning</h3>
+                        <div class="schedule-table-wrap">
+                            <table class="schedule-table">
+                                <thead><tr><th scope="col">Time</th><th scope="col">Event</th></tr></thead>
+                                <tbody>
+                                    <tr><td>9:00am-9:10am</td><td>Introduction</td></tr>
+                                    <tr><td>9:15am-9:55am</td><td><strong>Oisin Mac Aodha</strong></td></tr>
+                                    <tr><td>10:00am-10:40am</td><td><strong>Lukáš Picek</strong></td></tr>
+                                    <tr><td>10:40am-10:55am</td><td>Coffee Break</td></tr>
+                                    <tr><td>10:55am-11:55am</td><td>Spotlight Sessions</td></tr>
+                                    <tr><td>12:00pm-1:30pm</td><td>Lunch &amp; Posters</td></tr>
+                                    <tr><td>1:30pm-2:10pm</td><td><strong>Hjalmar S. Kühl</strong></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <section class="schedule-panel">
+                        <h3>Afternoon</h3>
+                        <div class="schedule-table-wrap">
+                            <table class="schedule-table">
+                                <thead><tr><th scope="col">Time</th><th scope="col">Event</th></tr></thead>
+                                <tbody>
+                                    <tr><td>2:15pm-2:30pm</td><td>Challenge</td></tr>
+                                    <tr><td>2:30pm-3:30pm</td><td><strong>Panel Discussion: Global Connectivity</strong></td></tr>
+                                    <tr><td>3:30pm-3:45pm</td><td>Coffee Break</td></tr>
+                                    <tr><td>3:45pm-4:25pm</td><td><strong>Silvia Zuffi</strong></td></tr>
+                                    <tr><td>4:25pm-5:05pm</td><td><strong>Nico Lang</strong></td></tr>
+                                    <tr><td>5:05pm</td><td>Closing Remarks</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
                 </div>
             </div>
         </section>

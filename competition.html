@@ -9,12 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/mobile-nav.js" defer></script>
 </head>
 <body>
     <header class="site-header">
         <div class="site-shell">
             <a class="site-mark" href="./index.html">CV4Ecology 2026</a>
-            <nav class="site-nav" aria-label="Primary">
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+            <nav id="primary-navigation" class="site-nav" aria-label="Primary">
                 <a href="./index.html">Home</a>
                 <a href="./cfp.html">CFP</a>
                 <a href="./program.html">Program</a>
