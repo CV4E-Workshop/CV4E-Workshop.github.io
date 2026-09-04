@@ -444,6 +444,50 @@ del {
     color: var(--text);
 }
 
+.spotlight-list {
+    display: grid;
+    gap: 0.75rem;
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.spotlight-heading {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+#panel-discussion,
+#spotlight-talks {
+    scroll-margin-top: 5rem;
+}
+
+.spotlight-list li {
+    padding-left: 0.3rem;
+    color: var(--text);
+    font-size: 1.02rem;
+    line-height: 1.45;
+}
+
+.spotlight-title,
+.spotlight-authors {
+    display: block;
+}
+
+.spotlight-title {
+    font-weight: 700;
+}
+
+.spotlight-authors {
+    margin-top: 0.2rem;
+    color: var(--muted);
+    font-size: 0.94rem;
+}
+
+@media (min-width: 1000px) {
+    .spotlight-authors {
+        white-space: nowrap;
+    }
+}
+
 .simple-columns {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
